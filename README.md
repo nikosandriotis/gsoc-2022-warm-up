@@ -27,14 +27,14 @@ Building the matrix sample. Here also I can see that my compiler version is outd
 
 ![alt text](https://github.com/nikosandriotis/gsoc-2022-warm-up/blob/main/snapshots/buildingmatrixmult2.png "")
 
-##Exercise2
+## Exercise2
 
 Now we check the timings if we make the size 10 times bigger and we change the device from the CPU to GPU:
 ![alt text](https://github.com/nikosandriotis/gsoc-2022-warm-up/blob/main/snapshots/matrixmultwithCPUandx10.png"")
 
 ![alt text](https://github.com/nikosandriotis/gsoc-2022-warm-up/blob/main/snapshots/matrixmultmultitime2nd_normaltimes10.png "")
 
-##Exercise3
+## Exercise3
 The code is in the /src directory.
 
 To run the implementation:
@@ -64,7 +64,7 @@ Here are some examples that show same results in CPU and GPU:
 
 ![alt text](https://github.com/nikosandriotis/gsoc-2022-warm-up/blob/main/snapshots/matrixmultmultitime2nd_normaltimes10.png "")
 
-##IMPORTANT NOTES
+## IMPORTANT NOTES
 
 Even though I was expecting VTune to be the easiest part of the assignment (I have used it extensively), it seems that I have an issue with my setup and I could not run it. Unfortunately I cannot update my versions of the compilers and drivers because this is my work's laptop.
 
