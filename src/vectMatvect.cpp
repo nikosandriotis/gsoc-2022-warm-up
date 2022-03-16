@@ -8,6 +8,8 @@
 #endif
 
 using namespace sycl;
+
+size_t N = 1024;
 // Create an exception handler for asynchronous SYCL exceptions
 static auto exception_handler = [](sycl::exception_list e_list) {
   for (std::exception_ptr const &e : e_list) {
@@ -101,7 +103,7 @@ int CPU_calculation(int* v, int* b, size_t size) {
 
 int main(int argc, char* argv[]) {
   // Change array_size if it was passed as argument
-  if (argc > 1) array_size = std::stoi(argv[1]);
+  if (argc > 1) N = std::stoi(argv[1]);
   // Create device selector for the device of your interest.
 #if FPGA_EMULATOR
   // DPC++ extension: FPGA emulator selector on systems without FPGA card.
@@ -115,9 +117,6 @@ int main(int argc, char* argv[]) {
 #endif
 
   try {
-    //set the size of your problem here.
-    constexpr size_t N = 1024;
-
     queue q(d_selector, exception_handler);
 
     // Print out the device information used for the kernel code.

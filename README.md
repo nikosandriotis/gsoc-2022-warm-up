@@ -30,9 +30,13 @@ Building the matrix sample. Here also I can see that my compiler version is outd
 ## Exercise2
 
 Now we check the timings if we make the size 10 times bigger and we change the device from the CPU to GPU:
+
 CPU
+
 ![alt text](https://github.com/nikosandriotis/gsoc-2022-warm-up/blob/main/snapshots/runoncpu10times.png "")
+
 GPU
+
 ![alt text](https://github.com/nikosandriotis/gsoc-2022-warm-up/blob/main/snapshots/gpumatrixmulttiming.png "")
 
 ## Exercise3
@@ -41,7 +45,9 @@ The code is in the /src directory.
 To run the implementation:
 
 clean the build folder:
+
 `cd src/build`
+
 `rm -rf *`
 
 Then locate your dpcpp compiler:
@@ -56,14 +62,14 @@ Then make:
 
 `make -B`
 
-And then you can run it (default size 1024, but you can change it in line 119 of src/vectMatvect.cpp):
+And then you can run it (default size 1024, but you can change it by passing another size):
 
-`./dpc_exercise`
+`./dpc_exercise 1344`
 
 Here are some examples that show same results in CPU and GPU:
-![alt text](https://github.com/nikosandriotis/gsoc-2022-warm-up/blob/main/snapshots/matrixmultwithCPUandx10.png"")
+![alt text](https://github.com/nikosandriotis/gsoc-2022-warm-up/blob/main/snapshots/size1024.png"")
 
-![alt text](https://github.com/nikosandriotis/gsoc-2022-warm-up/blob/main/snapshots/matrixmultmultitime2nd_normaltimes10.png "")
+![alt text](https://github.com/nikosandriotis/gsoc-2022-warm-up/blob/main/snapshots/size1708.png "")
 
 ## IMPORTANT NOTES
 
