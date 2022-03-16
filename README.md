@@ -39,6 +39,12 @@ GPU
 
 ![alt text](https://github.com/nikosandriotis/gsoc-2022-warm-up/blob/main/snapshots/gpumatrixmulttiming.png "")
 
+Someone would wonder here why we get similar results. The reason is that the matrix multiplication of the INTEL sample is as naive as it gets.
+
+The main reason this doesn't perform so well is because we are accessing the GPU's off-chip memory way too much. We can count:
+
+to do the (N * N * N) multiplications and additions, we need 2(N * N * N) loads and N*N stores. Since the multiplications and additions can actually be fused into a single hardware instruction (FMA), the computational intensity of the code is only 0.5 instructions per memory access. This is bad. 
+
 ## Exercise3
 The code is in the /src directory.
 
