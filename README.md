@@ -30,9 +30,10 @@ Building the matrix sample. Here also I can see that my compiler version is outd
 ## Exercise2
 
 Now we check the timings if we make the size 10 times bigger and we change the device from the CPU to GPU:
-![alt text](https://github.com/nikosandriotis/gsoc-2022-warm-up/blob/main/snapshots/matrixmultwithCPUandx10.png"")
-
-![alt text](https://github.com/nikosandriotis/gsoc-2022-warm-up/blob/main/snapshots/matrixmultmultitime2nd_normaltimes10.png "")
+CPU
+![alt text](https://github.com/nikosandriotis/gsoc-2022-warm-up/blob/main/snapshots/runoncpu10times.png "")
+GPU
+![alt text](https://github.com/nikosandriotis/gsoc-2022-warm-up/blob/main/snapshots/gpumatrixmulttiming.png "")
 
 ## Exercise3
 The code is in the /src directory.
