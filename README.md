@@ -67,9 +67,11 @@ And then you can run it (default size 1024, but you can change it by passing ano
 `./dpc_exercise 1344`
 
 Here are some examples that show same results in CPU and GPU:
-![alt text](https://github.com/nikosandriotis/gsoc-2022-warm-up/blob/main/snapshots/size1024.png"")
+![alt text](https://github.com/nikosandriotis/gsoc-2022-warm-up/blob/main/snapshots/size1024.png "")
 
 ![alt text](https://github.com/nikosandriotis/gsoc-2022-warm-up/blob/main/snapshots/size1708.png "")
+
+Here we should note that for this implementation and the used GPU, the resolution is until a size of N = 1708. If we grow the size bigger we can see that we have an overflow and get negative values (But the same on both sides).
 
 ## IMPORTANT NOTES
 
