@@ -1,0 +1,106 @@
+9 [140337223617472] INFO perfrun.launcher <> - Launcher main begin
+10 [140337223617472] INFO perfrun.launcher <> - MessageCatalogInit finished
+10 [140337223617472] INFO perfrun.launcher <> - Launcher instance created
+10 [140337223617472] INFO perfrun.launcher <> - argc = 7; cmdline = /opt/intel/oneapi/vtune/2022.2.0-nda/bin64/amplxe-runss --ui-output-format xml --ui-output-fd 5 --option-file /home/s2ph3r4t/git/gsoc-2022-warm-up/src/build/r002go/config/runss.options 
+446 [140337223617472] INFO perfrun.launcher <> - create msngr2::ICliToolContext
+446 [140337223617472] INFO perfrun.launcher <> - create file finder object
+447 [140337223617472] INFO perfrun.launcher <> - create a result directory: pattern = /home/s2ph3r4t/git/gsoc-2022-warm-up/src/build/r002go pid = 4294967295
+447 [140337223617472] INFO perfrun.sdk <> - checked that the directory /home/s2ph3r4t/git/gsoc-2022-warm-up/src/build/r002go is a local directory
+447 [140337223617472] INFO perfrun.sdk <> - the directory /home/s2ph3r4t/git/gsoc-2022-warm-up/src/build/r002go is a local directory with FS type ID 61267
+447 [140337223617472] INFO perfrun.launcher <> - create data directory = /home/s2ph3r4t/git/gsoc-2022-warm-up/src/build/r002go/data.0
+447 [140337223617472] INFO perfrun.launcher <> - Creating the master collection flag
+448 [140337223617472] INFO perfrun.launcher <> - Done creating the master collection flag
+465 [140337214096960] INFO perfrun.launcher <> - plugin [remoteplug] was disabled because it doesn't support the given collection type.
+465 [140337214096960] INFO perfrun.sdk <> - Allocating TMU :/home/s2ph3r4t/git/gsoc-2022-warm-up/src/build/r002go/data.0/systemcollector-2110008-FlipS.sc
+465 [140337214096960] INFO perfrun.system <> - Tpss based collection
+466 [140337214096960] INFO perfrun.launcher <> - plugin [ptracecollector] was disabled because it doesn't support the given collection type.
+466 [140337214096960] INFO perfrun.gpu <> - Event consumer configurations: 
+466 [140337214096960] INFO perfrun.sdk <> - Reading value (0) from file: /proc/sys/dev/i915/perf_stream_paranoid
+472 [140337214096960] INFO perfrun.gpu <> - DeviceInfo: address 0:0:2.0 subdevice index 0 preset 2 sampling interval 1000us
+472 [140337214096960] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+472 [140337214096960] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+472 [140337214096960] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+472 [140337214096960] INFO perfrun.mrte <> - Disabling mrte collector because mrte-mode option is set as native
+472 [140337214096960] INFO perfrun.launcher <> - plugin [mrte] was disabled because it doesn't support the given collection type.
+472 [140337214096960] INFO perfrun.launcher <> - plugin [emon] was disabled because it doesn't support the given collection type.
+472 [140337214096960] INFO perfrun.launcher <> - plugin [cuscol] was disabled because it doesn't support the given collection type.
+472 [140337214096960] INFO perfrun.launcher <> - plugin [stdsrc] was disabled because it doesn't support the given collection type.
+472 [140337214096960] INFO perfrun.launcher <> - plugin [sep] was disabled because it doesn't support the given collection type.
+472 [140337214096960] INFO perfrun.launcher <> - plugin [vtsspp] was disabled because it doesn't support the given collection type.
+472 [140337214096960] INFO perfrun.launcher <> - plugin [perf] was disabled because it doesn't support the given collection type.
+472 [140337214096960] INFO perfrun.launcher <> - plugin [aoclprofile] was disabled because it doesn't support the given collection type.
+472 [140337214096960] INFO perfrun.tpss <> - initialize tpss controller
+472 [140337214096960] INFO perfrun.tpss <> - configure collection mode: value = opencl_ex:stack|0:0:2.0
+472 [140337214096960] INFO perfrun.tpss <> - configure collection mode: value = opencl:stack|0:0:2.0
+472 [140337214096960] INFO perfrun.tpss <> - configure collection mode: value = mediasdk:stack|0:0:2.0
+472 [140337214096960] INFO perfrun.tpss <> - configure collection mode: value = level_zero:stack|0:0:2.0
+472 [140337214096960] INFO perfrun.tpss <> - configure collection mode: value = cpu:counters:nostack
+472 [140337214096960] INFO perfrun.tpss <> - configure collection mode: value = cpu:stack
+472 [140337214096960] INFO perfrun.tpss <> - default obj-size-min=1024
+472 [140337214096960] INFO perfrun.tpss <> - default hash-table-size=0
+472 [140337214096960] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+472 [140337214096960] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+472 [140337214096960] INFO perfrun.launcher <> - plugin [parallelfs] was disabled because it doesn't support the given collection type.
+472 [140337214096960] INFO perfrun.launcher <> - plugin [power] was disabled because it doesn't support the given collection type.
+472 [140337214096960] INFO perfrun.launcher <> - plugin [hwloc] was disabled because it doesn't support the given collection type.
+472 [140337214096960] INFO perfrun.launcher <> - plugin [ipmwatch] was disabled because it doesn't support the given collection type.
+472 [140337214096960] INFO perfrun.launcher <> - plugin [os_counters] was disabled because it doesn't support the given collection type.
+472 [140337214096960] INFO perfrun.launcher <> - plugin [l0_metrics] was disabled because it doesn't support the given collection type.
+472 [140337223617472] INFO perfrun.launcher <> - set environment variable: LD_LIBRARY_PATH = /opt/intel/oneapi/vtune/2022.2.0-nda/lib32/runtime:/opt/intel/oneapi/vtune/2022.2.0-nda/lib64/runtime:/opt/intel/oneapi/vpl/2022.0.0/lib:/opt/intel/oneapi/tbb/2021.5.1/env/../lib/intel64/gcc4.8:/opt/intel/oneapi/rkcommon/1.8.0/lib:/opt/intel/oneapi/ospray_studio/0.9.0/lib:/opt/intel/oneapi/ospray/2.8.0/lib:/opt/intel/oneapi/openvkl/1.1.0/lib:/opt/intel/oneapi/oidn/1.4.2/lib:/opt/intel/oneapi/mpi/2021.5.1//libfabric/lib:/opt/intel/oneapi/mpi/2021.5.1//lib/release:/opt/intel/oneapi/mpi/2021.5.1//lib:/opt/intel/oneapi/mkl/2022.0.2/lib/intel64:/opt/intel/oneapi/itac/2021.5.0/slib:/opt/intel/oneapi/ipp/2021.5.2/lib/intel64:/opt/intel/oneapi/ippcp/2021.5.1/lib/intel64:/opt/intel/oneapi/ipp/2021.5.2/lib/intel64:/opt/intel/oneapi/embree/3.13.2/lib:/opt/intel/oneapi/dnnl/2022.0.2/cpu_dpcpp_gpu_dpcpp/lib:/opt/intel/oneapi/debugger/2021.5.0/gdb/intel64/lib:/opt/intel/oneapi/debugger/2021.5.0/libipt/intel64/lib:/opt/intel/oneapi/debugger/2021.5.0/dep/lib:/opt/intel/oneapi/dal/2021.5.3/lib/intel64:/opt/intel/oneapi/compiler/2022.0.2/linux/lib:/opt/intel/oneapi/compiler/2022.0.2/linux/lib/x64:/opt/intel/oneapi/compiler/2022.0.2/linux/lib/oclfpga/host/linux64/lib:/opt/intel/oneapi/compiler/2022.0.2/linux/compiler/lib/intel64_lin:/opt/intel/oneapi/ccl/2021.5.1/lib/cpu_gpu_dpcpp
+472 [140337223617472] INFO perfrun.launcher <> - set environment variable: INTEL_LIBITTNOTIFY32 = /opt/intel/oneapi/vtune/2022.2.0-nda/lib32/runtime/libittnotify_collector.so
+472 [140337223617472] INFO perfrun.launcher <> - set environment variable: INTEL_LIBITTNOTIFY64 = /opt/intel/oneapi/vtune/2022.2.0-nda/lib64/runtime/libittnotify_collector.so
+472 [140337223617472] INFO perfrun.launcher <> - set environment variable: INTEL_ITTNOTIFY_GROUPS = 
+472 [140337223617472] INFO perfrun.launcher <> - set environment variable: INTEL_JIT_PROFILER32 = /opt/intel/oneapi/vtune/2022.2.0-nda/lib32/runtime/libittnotify_collector.so
+472 [140337223617472] INFO perfrun.launcher <> - set environment variable: INTEL_JIT_PROFILER64 = /opt/intel/oneapi/vtune/2022.2.0-nda/lib64/runtime/libittnotify_collector.so
+472 [140337223617472] INFO perfrun.launcher <> - set environment variable: VS_PROFILER = libittnotify_collector.so
+472 [140337223617472] INFO perfrun.launcher <> - set environment variable: OMP_TOOL_LIBRARIES = /opt/intel/oneapi/vtune/2022.2.0-nda/lib32/runtime/libittnotify_collector.so:/opt/intel/oneapi/vtune/2022.2.0-nda/lib64/runtime/libittnotify_collector.so
+472 [140337223617472] INFO perfrun.launcher <> - set environment variable: ENABLE_JITPROFILING = 1
+472 [140337223617472] INFO perfrun.launcher <> - set environment variable: CL_CONFIG_USE_VTUNE = True
+472 [140337223617472] INFO perfrun.launcher <> - set environment variable: KMP_FORKJOIN_FRAMES = 0
+472 [140337223617472] INFO perfrun.launcher <> - set environment variable: KMP_FORKJOIN_FRAMES_MODE = 0
+472 [140337223617472] INFO perfrun.launcher <> - set environment variable: OMP_TOOL = disabled
+472 [140337223617472] INFO perfrun.launcher <> - RpcServer: run RPC server to handle requests
+472 [140337223617472] INFO perfrun.launcher <> - Launcher: command line to start before modification = /home/s2ph3r4t/git/gsoc-2022-warm-up/src/build/dpc_exercise 1708
+472 [140337223617472] INFO perfrun.launcher <> - Launcher: command line to start after modification = /opt/intel/oneapi/vtune/2022.2.0-nda/bin64/pin -error_file /home/s2ph3r4t/git/gsoc-2022-warm-up/src/build/r002go/data.0/pinerr.tpsslog -detach_reattach -follow_execv -tool_load_option deepbind -t64 /opt/intel/oneapi/vtune/2022.2.0-nda/lib64/libtpsstool.so -t /opt/intel/oneapi/vtune/2022.2.0-nda/lib32/libtpsstool.so -server_name tpss_ipc.2110008 -prd_dir /opt/intel/oneapi/vtune/2022.2.0-nda -- /home/s2ph3r4t/git/gsoc-2022-warm-up/src/build/dpc_exercise 1708
+472 [140337223617472] INFO perfrun.launcher <> - ProcessCreator object was created
+473 [140337223617472] INFO perfrun.launcher <> - Launcher: the process was started in suspend mode
+473 [140337214096960] INFO perfrun.sdk <> - Reading value (0) from file: /proc/sys/dev/i915/perf_stream_paranoid
+474 [140337214096960] WARN perfrun.system <> - Could not do anything with /sys/kernel/debug/kvm: boost::filesystem::status: Permission denied: "/sys/kernel/debug/kvm", at file: vcs/perfrun1/plugins/system/src/trace_writer.cpp:787
+474 [140337214096960] WARN perfrun.system <> - Folder "/var/run/libvirt/qemu/"doesn't exist, at file: vcs/perfrun1/plugins/system/src/trace_writer.cpp:800
+474 [140337214096960] WARN perfrun.sdk <> - Failed to find xl binary on any of the system paths: /bin, /sbin, /usr/bin, /usr/sbin., at file: vcs/perfrun1/sdk/src/utils.cpp:204
+474 [140337214096960] WARN perfrun.system <> - Could not start ContainerMapping collector, at file: vcs/perfrun1/plugins/system/src/controller.cpp:448
+506 [140337214096960] INFO perfrun.vdso <> - Helper runtool '/opt/intel/oneapi/vtune/2022.2.0-nda/bin32/amplxe-runss -dump-vdso -r /home/s2ph3r4t/git/gsoc-2022-warm-up/src/build/r002go --tmp-dir /tmp/amplxe-tmp-s2ph3r4t' returned 0
+978 [140337214096960] INFO perfrun.vdso <> - Helper runtool '/opt/intel/oneapi/vtune/2022.2.0-nda/bin64/amplxe-runss -dump-vdso -r /home/s2ph3r4t/git/gsoc-2022-warm-up/src/build/r002go --tmp-dir /tmp/amplxe-tmp-s2ph3r4t' returned 0
+978 [140337214096960] INFO perfrun.itt <> - start itt controller for pid #2110013
+979 [140337214096960] INFO perfrun.sdk <> - Allocating TMU :/home/s2ph3r4t/git/gsoc-2022-warm-up/src/build/r002go/data.0/gen_metrics0_0_2_0_0.0.cfg
+980 [140337214096960] INFO perfrun.sdk <> - De-allocating TMU: /home/s2ph3r4t/git/gsoc-2022-warm-up/src/build/r002go/data.0/gen_metrics0_0_2_0_0.0.cfg
+980 [140337214096960] INFO perfrun.gpu <> - Creating main data processing loop
+980 [140337108477504] INFO perfrun.sdk <> - Allocating TMU :/home/s2ph3r4t/git/gsoc-2022-warm-up/src/build/r002go/data.0/gen_metrics0_0_2_0_0.0.vtss
+980 [140337214096960] INFO perfrun.tpss <> - start tpss controller for pid #2110013
+980 [140337108477504] INFO perfrun.gpu <> - IO stream opening, timer period: 1000000, buffer size: 0 subDevice 0 tile 0
+985 [140337108477504] INFO perfrun.gpu <> - IO stream opened, timer period: 851968, buffer size: 16777216
+1030 [140337223617472] INFO perfrun.launcher <> - Launcher: all plugins were started
+1030 [140337223617472] INFO perfrun.launcher <> - DirectoryMonitor object was created
+1030 [140337223617472] INFO perfrun.launcher <> - DirectoryMonitor: a callback was added
+1030 [140337223617472] INFO perfrun.launcher <> - DirectoryMonitor was started with pingTime = 1000
+1030 [140337223617472] INFO perfrun.launcher <> - DeadlineTimer is going to be constructed
+1031 [140337223617472] INFO perfrun.launcher <> - DeadlineTimer: a callback was added
+1032 [140337223617472] INFO perfrun.launcher <> - Launcher: resume the profiled application and  wait its termination or stop command
+2345 [140337223617472] INFO perfrun.launcher <> - Launcher: the profiled application was terminated  with exit code = 0
+2360 [140337214096960] INFO perfrun.itt <> - detach itt controller
+2360 [140337214096960] INFO perfrun.itt <> - detach itt controller done
+2360 [140337214096960] INFO perfrun.gpu <> - Waiting for data collection thread to finish
+2361 [140337108477504] INFO perfrun.sdk <> - De-allocating TMU: /home/s2ph3r4t/git/gsoc-2022-warm-up/src/build/r002go/data.0/gen_metrics0_0_2_0_0.0.vtss
+2361 [140337108477504] INFO perfrun.gpu <> - Data collection routine finished
+2362 [140337214096960] INFO perfrun.gpu <> - Data collection thread finished, shutting down the session
+2362 [140337214096960] INFO perfrun.tpss <> - stop tpss controller
+2362 [140337214096960] INFO perfrun.sdk <> - Reading value (0) from file: /proc/sys/dev/i915/perf_stream_paranoid
+2362 [140337214096960] INFO perfrun.sdk <> - De-allocating TMU: /home/s2ph3r4t/git/gsoc-2022-warm-up/src/build/r002go/data.0/systemcollector-2110008-FlipS.sc
+2362 [140337214096960] INFO perfrun.system <> - closed the system trace file: /home/s2ph3r4t/git/gsoc-2022-warm-up/src/build/r002go/data.0/systemcollector-2110008-FlipS.sc
+2362 [140337223617472] INFO perfrun.launcher <> - Launcher: all plugins were stopped.
+2362 [140337223617472] INFO perfrun.launcher <> - DeadlineTimer is going to be destroyed
+2362 [140337223617472] INFO perfrun.launcher <> - DeadlineTimer was destroyed
+2362 [140337223617472] INFO perfrun.launcher <> - DirectoryMonitor object was destroyed
+2362 [140337223617472] WARN perfrun.launcher <> - Stop command is ignored because it is received when collection is already stopped, at file: vcs/perfrun1/launcher/src/command_handler.cpp:226
+2363 [140337223617472] INFO perfrun.launcher <> - Application exit code: 0
+2363 [140337223617472] INFO perfrun.launcher <> - Exit code: 0
