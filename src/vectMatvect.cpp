@@ -39,7 +39,9 @@ void vecMatvec(queue& q,
         std::cout << "GPU::Multiplying V^T and B into C.\n";
         auto firstkernel = q.submit([&](handler& h) {
            std::cout << "GPU::Hola.\n";
-            h.parallel_for(range<2>{N, N}, [=](id<2> index) {
+	    range<2> global(N,N);
+	    range<2> local(1,1);
+            h.parallel_for(nd_range<2>(global, local), [=](id<2> index) {
                 // Threading index that iterates over c_gpu.
                 int row = index[0];
                 int col = index[1];
@@ -50,7 +52,9 @@ void vecMatvec(queue& q,
 
         std::cout << "GPU::Multiplying C and V into RES.\n";
         auto secondkernel = q.submit([&](handler& h) {
-            h.parallel_for(N, [=](id<1> index) {
+	    range<1> global(N);
+	    range<1> local(1);
+            h.parallel_for(nd_range<1>(global, local), [=](id<1> index) {
                 // Threading index that iterates over res_gpu.
                 int id = index[0];
                 //with the for loop here we avoid a necessary reduction here
@@ -61,10 +65,12 @@ void vecMatvec(queue& q,
         std::cout << "GPU::Reduction happening.\n";
         //sycl reduction implementation
         auto reduction = q.submit([&](handler& h) {
-            h.parallel_for(N, [=](id<1> i) {
-              sycl::ONEAPI::atomic_ref<int,
-                                       sycl::ONEAPI::memory_order::relaxed,
-                                       sycl::ONEAPI::memory_scope::system,
+	    range<1> global(N);
+	    range<1> local(1);
+            h.parallel_for(nd_range<1>(global, local), [=](id<1> i) {
+              sycl::ext::oneapi::atomic_ref<int,
+                                       memory_order::relaxed,
+                                       memory_scope::system,
                                        access::address_space::global_space>
                                        (*sum) += res_gpu[i]
                 ;});
